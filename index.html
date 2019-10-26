@@ -12,8 +12,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
 .hero-image {
-  background-image: url("M87_consensus_image.jpg");
+  background-image: url("thepit_blackhole_1.avi");
   background-color: #cccccc;
   height: 500px;
   width: 1920px;
@@ -66,11 +75,15 @@ body {
 	</head> <!--close head -->
 	<body> <!--the main content in webpage, everything you "see" is contained here -->
 
-	<div class="hero-image">
+	<video autoplay muted loop id="myVideo">
+  <source src="thepit_blackhole_1.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
   <div class="hero-text">
     <h1 style="font-size:50px">THE PIT</h1>
-    <h3>...makes a website</h3>
-    <button>Fuck me</button>
+    <h3>calls....</h3>
+    <!-- <button>Fuck me</button>  -->
   </div>
 </div>
 
